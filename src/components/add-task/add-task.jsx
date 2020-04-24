@@ -1,8 +1,8 @@
-import React from "react";
+import React, {Component} from "react";
 import { connect } from "react-redux";
-import { addTodo } from "../redux/actions";
+import { addTodo } from "../../redux/actions";
 
-class AddTask extends React.Component {
+class AddTask extends Component {
   constructor(props) {
     super(props);
     this.state = { input: "" };
