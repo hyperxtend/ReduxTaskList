@@ -1,4 +1,4 @@
-import { ADD_TODO, TOGGLE_TODO, SET_FILTER } from "./ActionTypes";
+import { ADD_TODO, TOGGLE_TODO, SET_FILTER } from "./action-types";
 
 let nextTodoId = 0;
 

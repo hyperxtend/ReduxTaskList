@@ -1,7 +1,7 @@
 import React from "react";
-import AddTask from "./Components/AddTask";
-import TaskList from "./Components/TaskList";
-import VisibilityFilters from "./Components/VisibilityFilters";
+import AddTask from "./Components/add-task";
+import TaskList from "./Components/task-list";
+import VisibilityFilters from "./components/visibility-filters";
 import "./styles.css";
 
 export default function TaskApp() {

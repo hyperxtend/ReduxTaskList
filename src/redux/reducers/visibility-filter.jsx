@@ -1,4 +1,4 @@
-import { SET_FILTER } from "../ActionTypes";
+import { SET_FILTER } from "../action-types";
 import { VISIBILITY_FILTERS } from "../../Constants";
 
 const initialState = VISIBILITY_FILTERS.ALL;

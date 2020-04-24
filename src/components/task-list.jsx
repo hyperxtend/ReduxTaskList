@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import Task from "./Task";
-import { getTodosByVisibilityFilter } from "../Redux/Selectors";
+import { getTodosByVisibilityFilter } from "../redux/selectors";
 
 const TaskList = ({ todos }) => (
   <ul className="taskList">
