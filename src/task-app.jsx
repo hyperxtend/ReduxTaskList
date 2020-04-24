@@ -1,6 +1,6 @@
 import React from "react";
-import AddTask from "./Components/add-task";
-import TaskList from "./Components/task-list";
+import AddTask from "./components/add-task";
+import TaskList from "./components/task-list";
 import VisibilityFilters from "./components/visibility-filters";
 import "./styles.css";
 

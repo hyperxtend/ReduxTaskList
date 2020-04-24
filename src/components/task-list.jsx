@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import Task from "./Task";
+import Task from "./task";
 import { getTodosByVisibilityFilter } from "../redux/selectors";
 
 const TaskList = ({ todos }) => (
