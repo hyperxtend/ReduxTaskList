@@ -1,4 +1,4 @@
-import { ADD_TODO, TOGGLE_TODO, SET_FILTER } from "./action-types";
+import { ADD_TODO, TOGGLE_TODO, SET_FILTER, DELETE_TODO } from "./action-types";
 
 let nextTodoId = 0;
 
@@ -12,6 +12,11 @@ export const addTodo = content => ({
 
 export const toggleTodo = id => ({
   type: TOGGLE_TODO,
+  payload: { id }
+});
+
+export const deleteTodo = id => ({
+  type: DELETE_TODO,
   payload: { id }
 });
 

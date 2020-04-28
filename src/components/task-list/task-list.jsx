@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import Task from "../task";
 import { getTodosByVisibilityFilter } from "../../redux/selectors";
+import Provider from "react-redux";
 
 const TaskList = ({ todos }) => (
   <ul className="taskList">
@@ -10,7 +11,9 @@ const TaskList = ({ todos }) => (
           return <Task key={`todo-${todo.id}`} todo={todo} />;
         })
       : "No added Tasks"}
+      <button onClick={this.handleDeleteTodo}>X</button>
   </ul>
+ 
 );
 const mapStateToProps = state => {
   const { visibilityFilter } = state;
