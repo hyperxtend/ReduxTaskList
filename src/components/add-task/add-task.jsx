@@ -10,6 +10,7 @@ class AddTask extends Component {
 
   updateInput = input => {
     this.setState({ input });
+    console.log("Input", input)
   };
 
   handleAddTodo = (event) => {
@@ -20,10 +21,13 @@ class AddTask extends Component {
 
   render() {
     return (
-      <div className="taskForm input-group mb-3">
-        <form className="form" onSubmit={this.handleAddTodo}>
+        <form 
+        className="form" onSubmit={this.handleAddTodo}>
         <div className="input-group-prepend">
-        <button className="addTask btn btn-dark">
+        <button 
+        className="addTask btn btn-dark"
+        type="submit"
+        >
           Add
         </button>
         </div>
@@ -31,13 +35,17 @@ class AddTask extends Component {
           className="inputTask form-control"
           onChange={e => this.updateInput(e.target.value)}
           value={this.state.input}
+          placeholder="Add a Task"
           required
         />
         </form>
-      </div>
+
     );
+   
   }
 } 
+
+
 export default connect(
   null,
   { addTodo }
