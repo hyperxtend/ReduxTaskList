@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddTask/> Should call the submitTodo function when clicked 1`] = `ShallowWrapper {}`;
