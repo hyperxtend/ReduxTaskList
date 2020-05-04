@@ -1,7 +1,5 @@
 import React from "react";
-import { connect } from "react-redux";
 import Task from "../task";
-import { getTodosByVisibilityFilter } from "../../redux/selectors";
 
 const TaskList = ({ todos }) => (
   <ul className="taskList">
@@ -13,10 +11,5 @@ const TaskList = ({ todos }) => (
   </ul>
  
 );
-const mapStateToProps = state => {
-  const { visibilityFilter } = state;
-  const todos = getTodosByVisibilityFilter(state, visibilityFilter);
-  return { todos };
-};
-export default connect(mapStateToProps)(TaskList);
-// export default TaskList;
+
+export default TaskList;

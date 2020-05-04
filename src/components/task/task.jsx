@@ -1,7 +1,5 @@
 import React from "react";
-import { connect } from "react-redux";
 import cx from "classnames";
-import { toggleTodo } from "../../redux/actions";
 
 const Task = ({ todo, toggleTodo }) => (
   <li className="taskItem" onClick={() => toggleTodo(todo.id)}>
@@ -17,8 +15,5 @@ const Task = ({ todo, toggleTodo }) => (
     
   </li>
 );
-export default connect(
-  null,
-  { toggleTodo }
-)(Task);
-// export default Task;
+
+export default Task;
