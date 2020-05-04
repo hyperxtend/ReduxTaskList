@@ -10,7 +10,6 @@ class AddTask extends Component {
 
   updateInput = input => {
     this.setState({ input });
-    console.log("Input", input)
   };
 
   handleAddTodo = (event) => {
@@ -45,7 +44,7 @@ class AddTask extends Component {
   }
 } 
 
-
+// export default AddTask;
 export default connect(
   null,
   { addTodo }

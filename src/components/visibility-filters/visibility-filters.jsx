@@ -35,3 +35,4 @@ export default connect(
   mapStateToProps,
   { setFilter }
 )(VisibilityFilters);
+// export default VisibilityFilters;
